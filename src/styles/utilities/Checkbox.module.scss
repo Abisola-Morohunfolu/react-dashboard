@@ -1,0 +1,56 @@
+@import '../variables.scss';
+
+.CheckboxLabel {
+	position: relative;
+
+	& input:checked ~ .Custom {
+		background-color: $color-primary;
+		border-radius: 5px;
+		transform: rotate(0deg) scale(1);
+		border: none;
+	}
+
+	& input:checked ~ .Custom::after {
+		transform: rotate(45deg) scale(1);
+		opacity: 1;
+		left: 5px;
+		top: 1px;
+		width: 6px;
+		height: 12px;
+		border: solid #fff;
+		border-width: 0 2px 2px 0;
+		background-color: transparent;
+		border-radius: 0;
+	}
+}
+.Checkbox {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.Custom {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 18px;
+	width: 18px;
+	background-color: transparent;
+	border-radius: 5px;
+	border: 1px solid $color-secondary-light;
+	transition: all 0.2s ease-in;
+}
+
+.Custom::after {
+	position: absolute;
+	content: '';
+	left: 12px;
+	top: 12px;
+	height: 0px;
+	width: 0px;
+	border-radius: 5px;
+	border: solid #fff;
+	border-radius: 0 3px 3px 0;
+	transform: rotate(0deg) scale(0);
+	opacity: 1;
+}

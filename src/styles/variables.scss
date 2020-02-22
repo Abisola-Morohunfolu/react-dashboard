@@ -3,8 +3,14 @@ $color-primary: #007bff;
 $color-primary-light: #d7e9fc;
 $color-primary-dark: #1a3a54;
 
+$color-secondary: #d0d0d0;
 $color-secondary-light: #868686;
-$color-secondary-dark: #5d5d5d;
+// $color-secondary-dark: #5d5d5d;
+$color-secondary-dark: #262626;
+
+$color-green: #1e8406;
+$color-red: #d80b0b;
+
 $color-black: #000000;
 
 //FONT VARIABLES
@@ -12,4 +18,5 @@ $primary-heading: 4rem;
 $secondary-heading: 3rem;
 $tertiary-heading: 2.5rem;
 
+$primary-font: 'Montserrat', Arial, Helvetica, sans-serif;
 $secondary-font: 'Nunito', sans-serif;
