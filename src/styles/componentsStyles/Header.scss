@@ -1,5 +1,125 @@
+@import '../variables.scss';
 .Header {
 	grid-column: full-start / full-end;
 	grid-row: 1 / 2;
-	background-color: #000;
+	background-color: #fff;
+	box-shadow: 0 4px 2rem rgba($color-secondary-light, 0.3);
+
+	padding: 2rem;
+	display: flex;
+
+	&-logo {
+		height: 3.5rem;
+	}
+}
+
+////SEARCH
+.search {
+	flex: 0 0 10%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.2s ease-in;
+	margin-left: auto;
+
+	&__input {
+		font-family: inherit;
+		font-size: inherit;
+		color: inherit;
+		border: none;
+		background-color: transparent;
+		padding: 3px;
+
+		width: 0%;
+		transform-origin: left;
+		transition: all 0.2s ease-in;
+
+		&::-webkit-input-placeholder {
+			font-weight: 100;
+			color: $color-secondary-light;
+			font-size: 1.2rem;
+			transform: translateX(2rem);
+		}
+	}
+
+	&__button {
+		border: none;
+		border-right: 1px solid $color-secondary-light;
+		border-left: 1px solid $color-secondary-light;
+		background-color: transparent;
+		padding: 1rem;
+		transition: all 0.3s ease-in;
+
+		&:focus {
+			outline: none;
+		}
+	}
+	&__icon {
+		height: 1.5rem;
+		width: 1.5rem;
+		fill: var(--color-grey-dark-3);
+	}
+
+	&:hover {
+		flex: 0 0 40%;
+	}
+
+	&:hover > .search__input {
+		width: 80%;
+		border-bottom: 1px solid $color-secondary-light;
+	}
+
+	&:hover > .search__button {
+		border: none;
+		transform: translateX(3rem);
+	}
+}
+
+///USER NAV
+.user__nav {
+	display: flex;
+	font-size: 1.2rem;
+	font-weight: 600;
+
+	&-box {
+		display: flex;
+		align-items: center;
+		margin-right: 3rem;
+		padding-right: 3rem;
+		border-right: 1px solid $color-secondary-light;
+	}
+
+	&-icon__box {
+		position: relative;
+
+		span {
+			position: absolute;
+			top: -25%;
+			right: -50%;
+		}
+	}
+
+	&-icon {
+		height: 2rem;
+		width: 2rem;
+	}
+
+	&-text {
+		margin-left: 1rem;
+	}
+
+	&-user {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-right: 3rem;
+
+		&-img {
+			height: 2.5rem;
+			border: 1px solid $color-primary;
+			border-radius: 50%;
+		}
+	}
 }

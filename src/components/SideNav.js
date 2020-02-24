@@ -25,15 +25,23 @@ const SideNav = () => {
 						<svg className="nav-icon">
 							<use xlinkHref="assets/icon-dashboard.svg#dashboard"></use>
 						</svg>
-						<span className={`${menuState.isOpen ? 'nav__link nav__link-active' : 'nav__link'}`}>
+						<span className={`${menuState.isOpen ? 'nav__link nav__link-open' : 'nav__link'}`}>
 							Dashboard
 						</span>
 					</li>
-					<li className="nav__item">
-						<svg className="nav-icon">
+					<li
+						className={`${
+							menuState.isOpen ? 'nav__item nav__item-open' : 'nav__item nav__item-active'
+						}`}
+					>
+						<svg className="nav-icon nav-icon-active">
 							<use xlinkHref="assets/icon-operations.svg#operations"></use>
 						</svg>
-						<span className={`${menuState.isOpen ? 'nav__link nav__link-active' : 'nav__link'}`}>
+						<span
+							className={`${
+								menuState.isOpen ? 'nav__link nav__link-open nav__link-active' : 'nav__link'
+							}`}
+						>
 							Operations
 						</span>
 					</li>
@@ -41,7 +49,7 @@ const SideNav = () => {
 						<svg className="nav-icon">
 							<use xlinkHref="assets/icon-records.svg#records"></use>
 						</svg>
-						<span className={`${menuState.isOpen ? 'nav__link nav__link-active' : 'nav__link'}`}>
+						<span className={`${menuState.isOpen ? 'nav__link nav__link-open' : 'nav__link'}`}>
 							Records
 						</span>
 					</li>
@@ -49,7 +57,7 @@ const SideNav = () => {
 						<svg className="nav-icon">
 							<use xlinkHref="assets/icon-supply.svg#supply"></use>
 						</svg>
-						<span className={`${menuState.isOpen ? 'nav__link nav__link-active' : 'nav__link'}`}>
+						<span className={`${menuState.isOpen ? 'nav__link nav__link-open' : 'nav__link'}`}>
 							Supply Store
 						</span>
 					</li>
@@ -57,7 +65,7 @@ const SideNav = () => {
 						<svg className="nav-icon">
 							<use xlinkHref="assets/icon-marketplace.svg#marketplace"></use>
 						</svg>
-						<span className={`${menuState.isOpen ? 'nav__link nav__link-active' : 'nav__link'}`}>
+						<span className={`${menuState.isOpen ? 'nav__link nav__link-open' : 'nav__link'}`}>
 							Market Place
 						</span>
 					</li>
@@ -65,7 +73,7 @@ const SideNav = () => {
 						<svg className="nav-icon">
 							<use xlinkHref="assets/icon-forum.svg#forum"></use>
 						</svg>
-						<span className={`${menuState.isOpen ? 'nav__link nav__link-active' : 'nav__link'}`}>
+						<span className={`${menuState.isOpen ? 'nav__link nav__link-open' : 'nav__link'}`}>
 							Forum
 						</span>
 					</li>
@@ -73,7 +81,7 @@ const SideNav = () => {
 						<svg className="nav-icon">
 							<use xlinkHref="assets/icon-settings.svg#settings"></use>
 						</svg>
-						<span className={`${menuState.isOpen ? 'nav__link nav__link-active' : 'nav__link'}`}>
+						<span className={`${menuState.isOpen ? 'nav__link nav__link-open' : 'nav__link'}`}>
 							Settings
 						</span>
 					</li>
