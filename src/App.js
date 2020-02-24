@@ -1,11 +1,13 @@
 import React from 'react';
-import classes from './styles/utilities/Button.module.scss';
+import SideNav from './components/SideNav';
 import './styles/App.scss';
+import Header from './components/Header';
 
 function App() {
 	return (
 		<div className="App">
-			<button className={`${classes.Button} ${classes.OutlineGrey}`}>Get Started</button>
+			<SideNav />
+			<Header />
 		</div>
 	);
 }
