@@ -1,0 +1,14 @@
+.product__image-container {
+	display: flex;
+	padding: 4rem;
+	.product__image {
+		img {
+			height: 20rem;
+		}
+	}
+
+	.caption {
+		font-size: 1.6rem;
+		font-weight: 600;
+	}
+}
