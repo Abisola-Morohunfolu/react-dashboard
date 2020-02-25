@@ -1,0 +1,37 @@
+@import '../variables.scss';
+
+.orders-nav {
+	display: flex;
+	align-items: center;
+	padding: 1rem 2rem;
+	margin-top: 10rem;
+}
+
+.heading-3 {
+	font-size: 1.6rem;
+	display: flex;
+	margin-right: 2rem;
+
+	&:nth-child(1),
+	&:nth-child(2) {
+		border-right: 1px solid $color-secondary-light;
+		padding-right: 2rem;
+	}
+
+	&:nth-child(3) {
+		margin-right: auto;
+	}
+
+	&--main {
+		margin-right: 1rem;
+	}
+
+	&--active {
+		color: $color-primary;
+		border-bottom: 2px solid $color-primary;
+	}
+}
+
+.ml-sm {
+	margin-left: 2rem;
+}
