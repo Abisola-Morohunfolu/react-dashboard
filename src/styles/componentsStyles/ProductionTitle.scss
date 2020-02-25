@@ -1,0 +1,49 @@
+@import '../variables.scss';
+
+.production__info {
+	display: flex;
+	align-items: center;
+	grid-column: center-start / full-end;
+	padding: 3rem;
+}
+
+.production-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	span {
+		border-radius: 100%;
+		background-color: $color-primary;
+		display: inline-block;
+		height: 3rem;
+		width: 3rem;
+		color: #fff;
+		font-size: 2rem;
+		margin-right: 1rem;
+
+		&:hover {
+			box-shadow: 0 4px 2rem rgba($color-secondary-light, 0.3);
+		}
+	}
+
+	button:active {
+		outline: none;
+	}
+}
+
+.production__heading {
+	border-left: 1px solid $color-secondary-light;
+	padding-left: 2rem;
+	&-text {
+		font-size: $tertiary-heading;
+		margin-left: 1rem;
+	}
+	// display: flex;
+
+	&-icon {
+		height: 2.5rem;
+		width: 2.5rem;
+		fill: $color-primary;
+	}
+}
