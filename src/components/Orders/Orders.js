@@ -12,6 +12,7 @@ const Orders = () => {
 			<OrdersNav />
 			<OrderHeaders />
 			<SingleOrder />
+			<SingleOrder />
 		</div>
 	);
 };
