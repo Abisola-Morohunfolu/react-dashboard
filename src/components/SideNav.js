@@ -42,7 +42,7 @@ const SideNav = () => {
 								menuState.isOpen ? 'nav__link nav__link-open nav__link-active' : 'nav__link'
 							}`}
 						>
-							Operations
+							Operations &#9660;
 						</span>
 					</li>
 					<li className="nav__item">
