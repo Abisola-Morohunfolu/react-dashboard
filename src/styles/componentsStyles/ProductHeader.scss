@@ -1,0 +1,27 @@
+@import '../variables.scss';
+
+.product__header {
+	display: flex;
+	align-items: flex-end;
+
+	padding: 1.5rem;
+	background-color: #fff;
+	border-bottom: 1px solid $color-secondary-light;
+}
+
+.product-heading {
+	font-size: 1.6rem;
+	font-weight: 600;
+
+	&:nth-child(1) {
+		color: $color-primary;
+		border-bottom: 2px solid $color-primary;
+		border-right: 1px solid $color-primary;
+		margin-right: 3rem;
+		padding-right: 3rem;
+	}
+
+	&:nth-child(2) {
+		margin-right: auto;
+	}
+}

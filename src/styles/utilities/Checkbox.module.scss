@@ -2,31 +2,14 @@
 
 .CheckboxLabel {
 	position: relative;
-
-	& input:checked ~ .Custom {
-		background-color: $color-primary;
-		border-radius: 5px;
-		transform: rotate(0deg) scale(1);
-		border: none;
-	}
-
-	& input:checked ~ .Custom::after {
-		transform: rotate(45deg) scale(1);
-		opacity: 1;
-		left: 5px;
-		top: 1px;
-		width: 6px;
-		height: 12px;
-		border: solid #fff;
-		border-width: 0 2px 2px 0;
-		background-color: transparent;
-		border-radius: 0;
-	}
+	cursor: pointer;
+	z-index: 2;
 }
 .Checkbox {
 	position: absolute;
 	opacity: 0;
-	cursor: pointer;
+	z-index: 3;
+	// visibility: hidden;
 }
 
 .Custom {
@@ -53,4 +36,24 @@
 	border-radius: 0 3px 3px 0;
 	transform: rotate(0deg) scale(0);
 	opacity: 1;
+}
+
+input[type='checkbox']:checked + .CheckboxLabel .Custom {
+	background-color: $color-primary;
+	border-radius: 5px;
+	transform: rotate(0deg) scale(1);
+	border: none;
+}
+
+input[type='checkbox']:checked + .CheckboxLabel .Custom::after {
+	transform: rotate(45deg) scale(1);
+	opacity: 1;
+	left: 5px;
+	top: 1px;
+	width: 6px;
+	height: 12px;
+	border: solid #fff;
+	border-width: 0 2px 2px 0;
+	background-color: transparent;
+	border-radius: 0;
 }

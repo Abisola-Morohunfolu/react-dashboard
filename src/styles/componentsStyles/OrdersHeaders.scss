@@ -1,0 +1,22 @@
+@import '../variables.scss';
+
+.orders-checkbox {
+	position: relative;
+	margin-right: 2rem;
+}
+
+.orders-heading {
+	display: flex;
+	background-color: #eee;
+	padding: 2rem;
+	margin: 0 2rem;
+}
+
+.heading-5 {
+	font-size: 1.2rem;
+
+	padding: 0 2.5rem;
+	&:nth-child(4) {
+		margin-right: auto;
+	}
+}

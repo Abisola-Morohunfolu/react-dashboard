@@ -32,6 +32,16 @@
 	}
 }
 
+.RoyalBtn {
+	background-color: #529ded;
+	color: #fff;
+}
+
+.GreenBtn {
+	color: $color-green;
+	text-decoration: underline;
+}
+
 .OutlineBlue {
 	border: 1px solid $color-primary;
 	color: $color-primary;

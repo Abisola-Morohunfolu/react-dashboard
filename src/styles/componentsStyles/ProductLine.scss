@@ -1,0 +1,17 @@
+@import '../variables.scss';
+
+.product__line {
+	background-color: #fff;
+	padding: 1.5rem 0;
+}
+
+.product__line-heading-box {
+	display: flex;
+	align-items: center;
+	padding: 1.5rem;
+	background-color: $color-secondary;
+
+	.product__line-heading {
+		margin-right: auto;
+	}
+}
